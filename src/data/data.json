@@ -1,0 +1,207 @@
+{
+  "Header": {
+    "title": "We are a Landing Page",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+  },
+  "About": {
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Why": [
+      "Lorem ipsum dolor",
+      "Tempor incididunt",
+      "Lorem ipsum dolor",
+      "Incididunt ut labore"
+    ],
+    "Why2": [
+      "Aliquip ex ea commodo",
+      "Lorem ipsum dolor",
+      "Exercitation ullamco",
+      "Lorem ipsum dolor"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-wordpress",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/1.jpeg",
+      "text": "\"Titulaire d une maitrise en Droit des Entreprises, a intégré la STB SICAR en 2002 en tant que Responsable du Contentieux en charge notamment du suivi et de l application des procédures des dossiers en phase contentieuse\"",
+      "name": "Anis Mlika"
+    },
+    {
+      "img": "img/testimonials/2.jpeg",
+      "text": "\"Titulaire d un diplôme en Marketing de l ISG de Tunis, elle a rejoint la STB SICAR depuis 2001. Elle occupe actuellement le poste de Chargé Suivi Portofolio Management ayant comme principale mission l’élaboration de la politique de participation et de placement, la supervision de la gestion du portefeuille globale et le suivi des projets\"",
+      "name": "Haifa Jebnoun"
+    },
+    {
+      "img": "img/testimonials/3.jpeg",
+      "text": "\"Ayant 10 ans d expérience dans le Private Equity et 3 ans dans un cabinet d expertise comptable. Elle a suivi une formation de Maîtrise en sciences comptables à la Faculté des Sciences Economiques et de gestion de TUNIS « FSEGT » Elle a pour principale mission d assurer la fiabilité de l information financière et la réalisation de mission d audit interne et d investigation.\"",
+      "name": "Hajer Hannachi"
+    },
+    {
+      "img": "img/testimonials/4.jpeg",
+      "text": "\"Riche d une expérience de plus de 16 ans, elle assure aujourd’hui la coordination entre les différents services administratifs, comptables, financier et contentieux. Elle possède un diplôme en Maîtrise en Administration Economique et Sociale de l’Institut Supérieur de Comptabilité de Tunis.\"",
+      "name": "Ines Mlika"
+    },
+    {
+      "img": "img/testimonials/5.png",
+      "text": "\"Possèdant 29 ans d’expérience professionnelle, il a commencé sa carrière dans le secteur bancaire dans la BDET avant de rejoindre le groupe STB où il a notamment été Directeur des Crédits aux PME. Il a aussi été membre du Comité d’Investissement de la STB SICAR et du FCPR INTECH géré par la SAGES CAPITAL. Il a intégré en 2018 la STB SICAR en tant que Directeur Général.\"",
+      "name": " Mr Mohamed Metoui"
+    },
+    {
+      "img": "img/testimonials/6.jpeg",
+      "text": "\"Titulaire d’une maitrise en Gestion, a rejoint la STB SICAR en 2002 où elle a exercé en tant que chargée d’affaires avant d’assurer les fonctions de responsable ressources humaines.\"",
+      "name": "Radhia Haddad"
+    },
+    {
+      "img": "img/testimonials/7.jpeg",
+      "text": "\"Titulaire d’un diplôme de maitrise en Informatique Appliquée à la Gestion et d’un diplôme en Gestion d’Actifs, elle possède une expérience de plus de 6 ans dans le domaine du private equity et occupe actuellement le poste de Chargée Gestion des Sorties ayant comme principale mission le suivi et le recouvrement des sorties programmées du portefeuille participations.\"",
+      "name": "Sana Ben Nejma"
+    },
+    {
+      "img": "img/testimonials/8.png",
+      "text": "\"Elle possède une expérience de plus de 18 ans dans le private equity. Elle est titulaire d’un diplôme de maitrise en sciences de gestion et d’un mastère en techniques bancaires. Elle a exercé en tant que coordinatrice responsable en charge du suivi de la gestion du portefeuille de participations et des études de projets.\"",
+      "name": "Dorra Chouchane"
+    },
+    {
+      "img": "img/testimonials/9.png",
+      "text": "\"Titulaire d’un diplôme de Maitrise en Méthode Quantitative Appliqué à l’Economie et à la Gestion et d’un diplôme d’études Supérieures de l’Institut Technique de Banque, il intervient depuis 16 ans dans le domaine du private equity et en charge notamment de la réalisation d’études financières et la mise en place optimale des participations de la STB SICAR.\"",
+      "name": "Karim Aouadi"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-briefcase",
+      "title": "23 ans D’expérience"
+    },
+    {
+      "icon": "fa fa-money",
+      "title": "128MDT sous gestion"
+    },
+    {
+      "icon": "fa fa-line-chart",
+      "title": "300 Investissemen en portefeuille"
+    },
+    {
+      "icon": "fa fa-cogs",
+      "title": "58 fonds gérés"
+    },
+    {
+      "icon": "fa fa-plane",
+      "title": "91 Sorties intégrales réalisées"
+    },
+    {
+      "icon": "fa fa-map-marker",
+      "title": "24 Régions"
+    },
+    {
+      "icon": "fa fa-users",
+      "title": "1750 Emplois créés durant les 5 dernières années "
+    }
+  ]
+}

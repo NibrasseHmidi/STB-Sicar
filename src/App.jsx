@@ -13,6 +13,7 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { ConditionOdd } from "./components/conditionOdd";
 import { Responsabilite } from "./components/responsabilite";
+import { Fond } from "./components/fonds";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -31,12 +32,19 @@ const App = () => {
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
       <Features data={landingPageData.Features} />
+      <Fond/>
       <Responsabilite/>
-    <ConditionOdd/>
-   
+      <ConditionOdd/>
       <Services data={landingPageData.Services} />
-      {/* <Gallery data={landingPageData.Gallery}/> */}
       <Testimonials data={landingPageData.Testimonials} />
+    
+     
+
+   
+    
+     
+    
+     
       <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
     </div>

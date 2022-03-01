@@ -13,6 +13,7 @@ h3,
 h4 {
   font-family: "Raleway", sans-serif;
 }
+
 h2 {
   text-transform: uppercase;
   margin: 0 0 20px;
@@ -182,7 +183,6 @@ hr {
   background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
-  margin: 0;
   font-size: 15px;
   font-weight: 500;
   border-radius: 25px;
@@ -750,18 +750,35 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-  padding: 100px 0;
+  padding: 10px 0;
+  background-color: #f6f6f6;
+}
+#column {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 #team h4 {
   margin: 5px 0;
 }
+
 #team .team-img {
-  width: 240px;
+  width: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
+
 #team .thumbnail {
   background: transparent;
   border: 0;
 }
+#team .thumbnail > img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
 #team .thumbnail .caption {
   padding: 10px 0 0;
   color: #888;
@@ -769,29 +786,34 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: rgba(255, 255, 255, 0.75);
+  background-color: white;
+  color: #1f386e;
 }
 #contact .section-title {
   margin-bottom: 40px;
 }
 #contact .section-title p {
-  font-size: 16px;
+  font-size: 25px;
 }
 #contact h2 {
-  color: #fff;
+  color: #1f386e;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
+  text-align: center;
 }
 #contact .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgb(4, 71, 85) 100%
+  );
   height: 4px;
   width: 60px;
   bottom: 0;
-  left: 30px;
 }
 #contact h3 {
   color: #fff;
@@ -799,18 +821,26 @@ header .intro-text {
   margin-bottom: 25px;
   padding-bottom: 20px;
   font-weight: 400;
+  text-align: center;
+}
+#contact h3:hover {
+  color: white;
 }
 #contact form {
   padding-top: 20px;
+  width: 80%;
 }
+
 #contact .text-danger {
   color: #cc0033;
   text-align: left;
 }
 #contact .btn-custom {
-  margin: 30px 0;
-  background: transparent;
-  border: 2px solid #fff;
+  margin-left: 250px;
+
+  background: #1f386e;
+
+  border: 20px solid #fff;
 }
 #contact .btn-custom:hover {
   color: #1f386e;
@@ -828,10 +858,10 @@ label {
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #444;
+  color: #1f386e;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ddd;
+  border: 1px solid #1f386e;
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -839,8 +869,9 @@ label {
   -o-transition: none;
   transition: none;
 }
+
 #contact .form-control:focus {
-  border-color: #999;
+  border-color: rgb(1, 7, 14);
   outline: 0;
   -webkit-box-shadow: transparent;
   box-shadow: transparent;
@@ -857,11 +888,28 @@ label {
 .form-control:-ms-input-placeholder {
   color: #777;
 }
+.contact-info {
+  background-color: #1f386e;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 87px;
+  color: white;
+}
+#contact {
+  background-color: white;
+
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0em;
+  color: #1f386e;
+  border: 2px solid #1f386e;
+}
+
 #contact .contact-item {
   margin: 20px 0;
 }
 #contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
   display: block;
 }
@@ -892,6 +940,7 @@ label {
   color: #608dfd;
   background: #fff;
 }
+
 /* Footer Section*/
 #footer {
   background: #f6f6f6;
@@ -900,6 +949,7 @@ label {
 #footer p {
   color: #888;
   font-size: 14px;
+  color: #1f386e;
 }
 #footer a {
   color: #608dfd;

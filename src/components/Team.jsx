@@ -2,23 +2,22 @@ export const Team = (props) => {
   return (
     <div id='team' className='text-center'>
       <div className='container'>
-        <div className='col-md-8 col-md-offset-2 section-title'>
-          <h2>Meet the Team</h2>
+        <div className=' section-title'>
+          <h2 style={{color:"#1f386e"}}>Nos partenaires</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            
           </p>
         </div>
-        <div id='row'>
+ 
+        <div id='column' style={{display:'flex'}}>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-3 col-sm-6 team'>
+                <div key={`${d.name}-${i}`} >
                   <div className='thumbnail'>
                     {' '}
                     <img src={d.img} alt='...' className='team-img' />
                     <div className='caption'>
-                      <h4>{d.name}</h4>
-                      <p>{d.job}</p>
+                     
                     </div>
                   </div>
                 </div>

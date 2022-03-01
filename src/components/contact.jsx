@@ -1,5 +1,14 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
+import { FaPhoneVolume, FaFax } from 'react-icons/fa';
+import {GiPositionMarker} from 'react-icons/gi'
+import { RiMailSendLine } from "react-icons/ri";
+import {AiOutlineContacts} from "react-icons/ai"
+import { toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
+toast.configure();
 
 const initialState = {
   name: '',
@@ -18,31 +27,27 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(name, email, message)
-    emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          clearState()
+    
+    emailjs.sendForm("service_fljdn8h","template_gbwk7zc", e.target,"user_EA91lKOXpigOTUjSTE8wa")
+
+    .then((result) => {
+			toast.success("Message envoyé", result.text);
         },
         (error) => {
-          console.log(error.text)
-        }
-      )
+
+        	toast.error("Une erreur s'est produite, veuillez réessayer", error.text);
+        });
   }
   return (
-    <div>
+    <div className='cnct'>
       <div id='contact'>
         <div className='container'>
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
+                <h2> Contactez-nous </h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                Vous pouvez nous contacter pour toute information complémentaire.
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -54,7 +59,7 @@ export const Contact = (props) => {
                         id='name'
                         name='name'
                         className='form-control'
-                        placeholder='Name'
+                        placeholder='Nom'
                         required
                         onChange={handleChange}
                       />
@@ -75,8 +80,9 @@ export const Contact = (props) => {
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
+               
                 </div>
-                <div className='form-group'>
+                <div className='form-group msg'>
                   <textarea
                     name='message'
                     id='message'
@@ -85,75 +91,76 @@ export const Contact = (props) => {
                     placeholder='Message'
                     required
                     onChange={handleChange}
+                 
                   ></textarea>
                   <p className='help-block text-danger'></p>
                 </div>
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                  Envoyer
                 </button>
               </form>
             </div>
+
           </div>
-          <div className='col-md-3 col-md-offset-1 contact-info'>
-            <div className='contact-item'>
-              <h3>Contact Info</h3>
+          <div>
+
+          </div>
+          <div div className='col-md-3 col-md-offset-1 contact-info'>
+          <div className='contact-item' >
+
+             <h3 style={{textAlign:'center', fontSize:"60px"}}><AiOutlineContacts/></h3> 
               <p>
                 <span>
-                  <i className='fa fa-map-marker'></i> Address
+                <GiPositionMarker/>Adresse
                 </span>
-                {props.data ? props.data.address : 'loading'}
+                {props.data ? props.data.addresse : 'loading'}
               </p>
+           
+           
             </div>
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-phone'></i> Phone
+                <FaPhoneVolume/> Telephone
                 </span>{' '}
-                {props.data ? props.data.phone : 'loading'}
+                {props.data ? props.data.telephone : 'loading'}
               </p>
             </div>
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-envelope-o'></i> Email
+                <RiMailSendLine/> Email
                 </span>{' '}
                 {props.data ? props.data.email : 'loading'}
               </p>
             </div>
-          </div>
-          <div className='col-md-12'>
-            <div className='row'>
-              <div className='social'>
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
-                      <i className='fa fa-facebook'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : '/'}>
-                      <i className='fa fa-twitter'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : '/'}>
-                      <i className='fa fa-youtube'></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div className='contact-item'>
+              <p>
+                <span>
+                <FaFax/> Fax
+                </span>{' '}
+                {props.data ? props.data.fax : 'loading'}
+              </p>
             </div>
-          </div>
+            
+            </div>
+         
         </div>
       </div>
+ 
+   <div style={{margin:"10px 2px"}}>
+       <iframe  title=" map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.0205923369335!2d10.198993914391536!3d36.841982873047975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34c8eaaaaaab%3A0x89c29f6c6d8069d8!2sSTB%20Sicar!5e0!3m2!1sfr!2stn!4v1646066476694!5m2!1sfr!2stn"  width="1270" height="450" style={{border:"2px solid white"}}  allowfullscreen="" loading="lazy"></iframe>
+</div> 
+         
+          
+     
       <div id='footer'>
         <div className='container text-center'>
+     
           <p>
-            &copy; 2020 Issaaf Kattan React Land Page Template. Design by{' '}
-            <a href='http://www.templatewire.com' rel='nofollow'>
-              TemplateWire
-            </a>
+            &copy; 2022 STB SICAR. All rights resevered - Developed by GoMyCode_Alumni
+        
           </p>
         </div>
       </div>

@@ -31,7 +31,7 @@ export const Navigation = (props) => {
             data-toggle='collapse'
             data-target='#bs-example-navbar-collapse-1'
           >
-            {' '}
+          
             <span className='sr-only'>Toggle navigation</span>{' '}
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
@@ -48,35 +48,27 @@ export const Navigation = (props) => {
         >
           <ul className='nav navbar-nav navbar-right'>
             <li>
-              <a href='#features' className='page-scroll'>
-                Features
-              </a>
-            </li>
-            <li>
               <a href='#about' className='page-scroll'>
-                About
+              Nous connaitre
               </a>
             </li>
             <li>
-              <a href='#services' className='page-scroll'>
-                Services
-              </a>
-            </li>
-            <li>
-              <a href='#portfolio' className='page-scroll'>
-                Gallery
+              <a href='#responsabilite' className='page-scroll'>
+              Responsabilité
               </a>
             </li>
             <li>
               <a href='#testimonials' className='page-scroll'>
-                Testimonials
+              Equipe
               </a>
             </li>
             <li>
               <a href='#team' className='page-scroll'>
-                Team
+              Partenaires
               </a>
             </li>
+          
+         
             <li>
               <a href='#contact' className='page-scroll'>
                 Contact

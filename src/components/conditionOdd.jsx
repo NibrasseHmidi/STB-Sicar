@@ -1,6 +1,6 @@
 export const ConditionOdd = (props) => {
     return (
-      <div  className='text-center'>
+      <div id='conditionodd' className='text-center'>
         <div className='container'>
           <div className='section-title'>
             <h2>Contribution ODD</h2>

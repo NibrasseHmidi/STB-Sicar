@@ -3,7 +3,6 @@ import emailjs from 'emailjs-com'
 import { FaPhoneVolume, FaFax } from 'react-icons/fa';
 import {GiPositionMarker} from 'react-icons/gi'
 import { RiMailSendLine } from "react-icons/ri";
-import {AiOutlineContacts} from "react-icons/ai"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 toast.configure();
@@ -18,7 +17,7 @@ export const Contact = (props) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
   }
-  const clearState = () => setState({ ...initialState })
+  
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(name, email, message)

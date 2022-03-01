@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 export const Navigation = (props) => {
-  const [scroll,setScroll]=useState('')
   useEffect(() => {
    
     let lastScrollPosition = 0;

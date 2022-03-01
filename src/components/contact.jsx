@@ -149,7 +149,7 @@ export const Contact = (props) => {
         </div>
       </div>
  
-   <div style={{margin:"10px 2px"}}>
+   <div className='mapdiv' style={{margin:"10px 2px"}}>
        <iframe  title=" map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.0205923369335!2d10.198993914391536!3d36.841982873047975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34c8eaaaaaab%3A0x89c29f6c6d8069d8!2sSTB%20Sicar!5e0!3m2!1sfr!2stn!4v1646066476694!5m2!1sfr!2stn"  width="1270" height="450" style={{border:"2px solid white"}}  allowfullscreen="" loading="lazy"></iframe>
 </div> 
          

@@ -4,7 +4,6 @@ import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
@@ -13,6 +12,7 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { ConditionOdd } from "./components/conditionOdd";
 import { Responsabilite } from "./components/responsabilite";
+import { Fond } from "./components/fonds";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -31,9 +31,9 @@ const App = () => {
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
       <Features data={landingPageData.Features} />
+    <Fond/>
       <Responsabilite/>
     <ConditionOdd/>
-   
       <Services data={landingPageData.Services} />
       {/* <Gallery data={landingPageData.Gallery}/> */}
       <Testimonials data={landingPageData.Testimonials} />

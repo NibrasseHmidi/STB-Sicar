@@ -1,4 +1,26 @@
+import { useEffect, useState } from "react"
+
 export const Navigation = (props) => {
+  const [scroll,setScroll]=useState('')
+  useEffect(() => {
+   
+    let lastScrollPosition = 0;
+    const navbar = document.querySelector('.navbar-default');
+    const logo = document.querySelector('img');
+    window.addEventListener('scroll', function(e) {
+      lastScrollPosition = window.scrollY;
+      
+      if (lastScrollPosition > 300){
+        navbar.classList.add('navbar-dark');
+        logo.src="img/logoSicar.png"
+      }
+      else{
+        navbar.classList.remove('navbar-dark');
+       
+        logo.src="img/logob.png"
+      }
+    });
+  }, []);
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -15,9 +37,9 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            React Landing Page
-          </a>{' '}
+          
+         <img className='navbar-brand page-scroll' src="img/logoSicar.png" alt="" />
+         
         </div>
 
         <div
